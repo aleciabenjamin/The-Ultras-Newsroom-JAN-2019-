@@ -6,9 +6,9 @@ Feature: List articles on the landing page
 
 Background: 
     Given the following articles exist
-            |                       title                            |                                      content                                        |
-            |           Voted best mead recipe        |     Restaurant wins prize for best mead in Sweden           |
-            |   Ancient viking grave discovered   |    Kids come across sword protruding from the earth       |
+            |                       title                            |                          lead                             |                                   content                                        |
+            |           Voted best mead recipe        |                Restaurant wins prize            |     Restaurant wins prize for best mead in Sweden       | 
+            |   Ancient viking grave discovered   |               Kids come across sword         |   Kids come across sword protruding from the earth    |
 
   Scenario: View list of articles on the landing page
     When I visit the site
