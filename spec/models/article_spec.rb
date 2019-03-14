@@ -10,7 +10,7 @@ RSpec.describe Article, type: :model do
 
     describe 'Validations' do
         it { is_expected.to validate_presence_of :title }
-        it { is_expected.to validate_presence_of :lead }
+        it { is_expected.to validate_presence_of :lead } 
         it { is_expected.to validate_presence_of :content } 
     end
 

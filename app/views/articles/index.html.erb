@@ -1,17 +1,11 @@
-<h1>The Viking Times</h1>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th></th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-        <td><%= article.title %></td>
-        <td><%= article.lead %></td>
-        <td><%= article.content %></td>
-    </tr>
-  <% end %>
-</table>
-<%= link_to "New Article",  new_article_path %>
+<% @articles.each do |article| %>
+    <h1>
+        <%= article.title %>
+    </h1>
+    <p>
+        <%= article.lead %>
+    </p>
+    <p>
+        <%= article.content %>
+    </p>
+<% end %> 
